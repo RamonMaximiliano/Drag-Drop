@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#080050;
+}
+
+.maintitle{
+    color:white;
+    width:310px;
+    margin: auto;
+    font-size:60px;
+    margin-top:150px;
+}
+
+.main-source{
+    display:flex;
+    width:975px;
+    height: 300px;
+    margin:auto;
+    border:5px solid white;
+    margin-top:100px;
+    justify-content: space-around;
+    padding:20px;
+}
+
+.main-destiny{
+    display:flex;
+    width:975px;
+    height: 300px;
+    margin:auto;
+    margin-top:100px;
+}
+
+.destiny1, .destiny2,.destiny3 {
+    width:325px;
+    height: 300px;
+    border:5px solid white;
+}
+
+.footer{
+    width:200px;
+    color:white;
+    font-size:25px;
+    margin:auto;
+    margin-top:100px;
+}
+
+.number1, .number2, .number3 {
+    align-items: center;
+    text-align: center;
+    padding-top:40px;
+    width:200px;
+    height: 200px;;
+    background-color: #006AFF;
+    margin-top:20px;
+    color:white;
+    font-size: 100px;
+}
+
+
+/*
+
+Blue colors 
+
+006AFF
+
+0012FF
+
+0012FF
+
+003EFF
+
+1900FF
+
+*/
