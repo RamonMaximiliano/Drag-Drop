@@ -14,17 +14,20 @@
     <h1 class="maintitle">Drag & Drop</h1>
 
     <div class="main-source">
-        <div class="number1" draggable="true">1</div>
-        <div class="number2" draggable="true">2</div>
-        <div class="number3" draggable="true">3</div>
+        <p class="number1" draggable="true" ondragstart="drag(event)" id="number1">1</p>
+        <div class="number2" draggable="true" ondragstart="dragSquare(item)" id="number2">2</div>
+        <div class="number3" draggable="true" ondragstart="dragSquare(item)" id="number3">3</div>
     </div>
 
     <div class="main-destiny">
-        <div class="destiny1"></div>
-        <div class="destiny2"></div>
-        <div class="destiny3"></div>
+        <div class="destiny1" ondragover="allowDrop(event)" ondrop="drop(event)" id="destiny1"></div>
+        <div class="destiny2" ondragover="canDrop(endItem)" ondrop="droppedElm(dropped)" id="destiny2"></div>
+        <div class="destiny3" ondragover="canDrop(endItem)" ondrop="droppedElm(dropped)" id="destiny3"></div>
     </div>
 
+<div class="divButton">
+<button class="reset" onclick="reset()">Reset</button>
+</div>
     <footer class="footer">Created by Ramon</footer>
     <script type="text/javascript" src="script.js"></script>
 </body>
