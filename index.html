@@ -12,17 +12,24 @@
 <body>
 
     <h1 class="maintitle">Drag & Drop</h1>
-
+<!--
+- draggable="true" = makes the element draggable
+- ondragstart="drag(event)" call function that grabs the element
+-->
     <div class="main-source">
         <p class="number1" draggable="true" ondragstart="drag(event)" id="number1">1</p>
-        <div class="number2" draggable="true" ondragstart="dragSquare(item)" id="number2">2</div>
-        <div class="number3" draggable="true" ondragstart="dragSquare(item)" id="number3">3</div>
+        <div class="number2" draggable="true" ondragstart="drag(event)" id="number2">2</div>
+        <div class="number3" draggable="true" ondragstart="drag(event)" id="number3">3</div>
     </div>
 
+<!--
+- ondragover="allowDrop(event)" = The ondragover event specifies where the dragged data can be dropped.
+- ondrop="dropSquare(event)" = When the dragged data is dropped, a drop event occurs.
+-->
     <div class="main-destiny">
-        <div class="destiny1" ondragover="allowDrop(event)" ondrop="drop(event)" id="destiny1"></div>
-        <div class="destiny2" ondragover="canDrop(endItem)" ondrop="droppedElm(dropped)" id="destiny2"></div>
-        <div class="destiny3" ondragover="canDrop(endItem)" ondrop="droppedElm(dropped)" id="destiny3"></div>
+        <div class="destiny1" ondragover="allowDrop(event)" ondrop="dropSquare(event)" id="destiny1"></div>
+        <div class="destiny2" ondragover="allowDrop(event)" ondrop="dropSquare(event)" id="destiny2"></div>
+        <div class="destiny3" ondragover="allowDrop(event)" ondrop="dropSquare(event)" id="destiny3"></div>
     </div>
 
 <div class="divButton">
